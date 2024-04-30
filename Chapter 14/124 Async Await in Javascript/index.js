@@ -30,3 +30,12 @@ async function asyncFunc() {
 }
 
 asyncFunc();
+
+let promiseArr = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
+
+async function promiseFunc() {
+  let arr = await Promise.all(promiseArr);
+  console.log(arr);
+}
+
+promiseFunc()
