@@ -31,3 +31,9 @@ p4.textContent = location.port;
 
 let p5 = locationDiv.children[4];
 p5.textContent = location.pathname;
+
+let btn = document.getElementById("visit");
+
+btn.addEventListener("click", function (e) {
+  location.assign("https://www.google.com/");
+});
